@@ -6,7 +6,9 @@ package main;
 
 import Controllers.CustomerController;
 import Models.CustomerList;
+import Models.CustomerSet;
 import Views.CustomerConsole;
+import Views.CustomerFrame;
 
 /**
  *
@@ -17,11 +19,14 @@ public class CustomerMain {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {       
-        CustomerList model = new CustomerList();
+    public static void main(String[] args) {
+        
+        CustomerSet model = new CustomerSet();
         CustomerConsole view = new CustomerConsole();
         CustomerController controller = new CustomerController(model,view);
         view.setController(controller);
+        CustomerFrame frm = new CustomerFrame();
+        frm.setVisible(true);
         view.show();
     }
     
