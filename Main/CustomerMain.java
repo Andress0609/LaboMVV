@@ -20,6 +20,7 @@ public class CustomerMain {
     public static void main(String[] args) {       
         CustomerList model = new CustomerList();
         CustomerConsole view = new CustomerConsole();
+        
         CustomerController controller = new CustomerController(model,view);
         view.setController(controller);
         view.show();
