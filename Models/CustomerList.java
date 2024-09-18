@@ -50,7 +50,6 @@ public class CustomerList implements IManager<Customer> {
         return false;
     }
 
-    
     @Override
     public boolean remove(Customer customer) {
         if (customer != null && get(customer)!=null) {

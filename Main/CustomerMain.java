@@ -8,7 +8,11 @@ import Controllers.CustomerController;
 import Models.CustomerList;
 import Models.CustomerSet;
 import Views.CustomerConsole;
+<<<<<<< HEAD
 import Views.FrmCustomer;
+=======
+import Views.CustomerFrame;
+>>>>>>> ch
 
 /**
  *
@@ -19,11 +23,21 @@ public class CustomerMain {
     /**
      * @param args the command line arguments
      */
+<<<<<<< HEAD
     public static void main(String[] args) {       
         CustomerSet model = new CustomerSet();
         FrmCustomer view = new FrmCustomer();
+=======
+    public static void main(String[] args) {
+        
+        CustomerSet model = new CustomerSet();
+        CustomerConsole view = new CustomerConsole();
+        
+>>>>>>> ch
         CustomerController controller = new CustomerController(model,view);
         view.setController(controller);
+        CustomerFrame frm = new CustomerFrame();
+        frm.setVisible(true);
         view.show();
     }
     
