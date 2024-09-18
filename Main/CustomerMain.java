@@ -23,6 +23,7 @@ public class CustomerMain {
         
         CustomerSet model = new CustomerSet();
         CustomerConsole view = new CustomerConsole();
+        
         CustomerController controller = new CustomerController(model,view);
         view.setController(controller);
         CustomerFrame frm = new CustomerFrame();
