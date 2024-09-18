@@ -209,7 +209,7 @@ public class CustomerFrame extends javax.swing.JFrame implements IView<Customer>
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarActionPerformed
-        this.displayAll(list);
+       // this.displayAll(list);
     }//GEN-LAST:event_btnListarActionPerformed
 
     /**
@@ -308,7 +308,7 @@ public class CustomerFrame extends javax.swing.JFrame implements IView<Customer>
 
     @Override
     public void displayAll(List<Customer> list) {
-        this.displayAll(list);
+        // this.displayAll(list);
         
     }
 }
